@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Solution44 {
+    + main
+}
+
+class ProductDatabase{
+    + ProductDatabase(File input) // constructor
+    + boolean searchForProduct(String search)
+    + boolean contains(String search)
+}
+
+class Product{
+    + String getName
+    + void setName
+    + Product(String name, double price, int quantity) // constructor
+    + void printProduct
+}
+
+Solution44 o--> ProductDatabase
+ProductDatabase o--> Product
+Product o--> ProductDatabase
+@enduml

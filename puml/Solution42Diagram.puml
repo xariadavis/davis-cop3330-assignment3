@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Solution42 {
+    + main
+    + ArrayList<Person42> getScannerInput(File input)
+}
+
+class Person42{
+    + Person 42 constructor(String fName, String lName, String salary)
+    + String getFirstName
+    + String getLastName
+    + String getSalary
+}
+
+class GroupOfPeople42{
+    + GroupOfPeople42 constructor (Arraylist<Person42> myList)
+    + void printAllPeople(File output)
+}
+
+Solution42 o--> Person42
+Person42 o--> GroupOfPeople42
+@enduml

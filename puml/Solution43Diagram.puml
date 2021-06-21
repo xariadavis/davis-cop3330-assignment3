@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Solution43 {
+    + main
+}
+
+class Website {
+    + Website constructor
+    + void setSiteName
+    + void setAuthorName
+    + void promptForCSS
+    + void promptForJS
+    + File createAllDirectories
+    + File createHTMLDirectory
+    + File createJSFolder
+    + File createCSSFolder
+    + void closeScanner
+}
+
+Solution43 o--> Website
+
+@enduml

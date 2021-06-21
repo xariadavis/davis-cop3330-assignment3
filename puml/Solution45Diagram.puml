@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Solution45 {
+    + main
+    + readInputFile(File filename)
+    + promptForOutName()
+    + printOutput(File output, String outputContent)
+}
+
+class WordFinder {
+    + replaceUtilize(String input)
+}
+
+WordFinder o--> Solution45
+
+@enduml

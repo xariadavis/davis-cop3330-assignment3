@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Solution41 {
+    + main
+    + ArrayList<Person> getInputScanner(File input)
+}
+
+class Person{
+    + Person constructor (String fName, String lName)
+        fName
+        lName
+    + String getFirstName
+    + String getLastName
+}
+
+class GroupOfPeople{
+    + GroupOfPeople constructor(ArrayList<Person> list)
+        groupList
+        numPeople
+    + void printAllPeople(file Output)
+    + int comparePeople(Person p1, Person p2)
+    + void alphabetSort
+}
+
+Solution41 o--> Person
+Person o--> GroupOfPeople
+
+@enduml

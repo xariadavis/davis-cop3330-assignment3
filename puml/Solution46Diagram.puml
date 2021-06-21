@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Solution46{
+    + main
+}
+
+class WordFrequency{
+    + WordFrequency() // constructor
+    + boolean wordExists(String word)
+    + Word findWord(String word)
+    + int compareWords(Word w1, Word w2)
+    + void readWord(String word)
+    + void printHistogram
+    + sortWords
+}
+
+class Word{
+    + Word(String word, int frequency) // constructor
+    + String getWord
+    + int getFrequency
+    + void incrementFrequency
+}
+
+Solution46 o--> WordFrequency
+WordFrequency o--> Word
+Word o-->  WordFrequency
+
+@enduml
